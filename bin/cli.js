@@ -11,7 +11,7 @@ const runCommand = (command) => {
   return true;
 };
 const repoName = process.argv[2];
-const checkoutCommand = `git clone --depth 1 https://github.com/Ahmed-Abelfatah/node-ts-template ${repoName}`;
+const checkoutCommand = `git clone --depth 1 https://github.com/Ahmed-Abelfatah/nodejs-ts-template ${repoName}`;
 const installDependancies = `cd ${repoName} && yarn install`;
 console.log(`🏗️  👷👷 Cloning the repository with name ${repoName} 👷👷 🏗️`);
 const checkout = runCommand(checkoutCommand);
