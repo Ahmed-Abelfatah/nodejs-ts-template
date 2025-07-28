@@ -4,7 +4,7 @@
   "description": "A Node.js + TypeScript boilerplate to kickstart new backend projects with best practices and essential configurations included.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "npx nodemon"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/Ahmed-Abelfatah/nodejs-ts-template/issues"
   },
-  "homepage": "https://github.com/Ahmed-Abelfatah/nodejs-ts-template#readme"
+  "homepage": "https://github.com/Ahmed-Abelfatah/nodejs-ts-template#readme",
+  "devDependencies": {
+    "@tsconfig/node23": "^23.0.2",
+    "@types/node": "^24.1.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  }
 }
