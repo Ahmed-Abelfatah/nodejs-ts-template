@@ -13,7 +13,7 @@ const runCommand = (command) => {
 const repoName = process.argv[2];
 const checkoutCommand = `git clone --depth 1 https://github.com/Ahmed-Abelfatah/nodejs-ts-template ${repoName}`;
 const installDependancies = `cd ${repoName} && yarn install`;
-const cleanUpAndInitiateGit = `rm -rf .git bin && git init -b main`
+const cleanUpAndInitiateGit = `cd ${repoName} && rm -rf .git bin && git init -b main`
 console.log(`🏗️  👷👷 Cloning the repository with name ${repoName} 👷👷 🏗️`);
 const checkout = runCommand(checkoutCommand);
 if (!checkout) process.exit(-1);

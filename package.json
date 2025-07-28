@@ -1,6 +1,6 @@
 {
   "name": "@ahmed-abdelfatah/nodejs-ts-boilerplate",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Node.js + TypeScript boilerplate to kickstart new backend projects with best practices and essential configurations included.",
   "bin": "./bin/cli.js",
   "scripts": {
