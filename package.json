@@ -1,32 +1,48 @@
 {
-  "name": "@ahmed-abdelfatah/nodejs-ts-boilerplate",
-  "version": "1.0.4",
-  "description": "A Node.js + TypeScript boilerplate to kickstart new backend projects with best practices and essential configurations included.",
-  "bin": "./bin/cli.js",
-  "scripts": {
-    "start:dev": "npx nodemon",
-    "build": "rimraf ./dist && tsc",
-    "start": "yarn run build && node ./dist/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ahmed-Abelfatah/nodejs-ts-template.git"
-  },
-  "author": "Ahmed Abdelfatah",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Ahmed-Abelfatah/nodejs-ts-template/issues"
-  },
-  "homepage": "https://github.com/Ahmed-Abelfatah/nodejs-ts-template#readme",
-  "devDependencies": {
-    "@tsconfig/node23": "^23.0.2",
-    "@types/node": "^24.1.0",
-    "nodemon": "^3.1.10",
-    "rimraf": "^6.0.1",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
-  },
-  "dependencies": {
-    "dotenv": "^17.2.1"
-  }
+    "name": "@ahmed-abdelfatah/nodejs-ts-boilerplate",
+    "version": "1.0.4",
+    "description": "A Node.js + TypeScript boilerplate to kickstart new backend projects with best practices and essential configurations included.",
+    "bin": "./bin/cli.js",
+    "scripts": {
+        "start:dev": "npx nodemon",
+        "build": "rimraf ./dist && tsc",
+        "check-types": "tsc --pretty --noEmit",
+        "start": "yarn run build && node ./dist/index.js",
+        "lint": "eslint src/**/*.ts",
+        "lint:fix": "eslint src/**/*.ts --fix",
+        "format": "prettier . --write",
+        "prepare": "husky",
+        "test": "jest --coverage",
+        "test:watch": "jest --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Ahmed-Abelfatah/nodejs-ts-template.git"
+    },
+    "author": "Ahmed Abdelfatah",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Ahmed-Abelfatah/nodejs-ts-template/issues"
+    },
+    "homepage": "https://github.com/Ahmed-Abelfatah/nodejs-ts-template#readme",
+    "devDependencies": {
+        "@eslint/js": "^9.32.0",
+        "@tsconfig/node23": "^23.0.2",
+        "@types/jest": "^30.0.0",
+        "@types/node": "^24.1.0",
+        "@typescript-eslint/eslint-plugin": "^8.39.0",
+        "@typescript-eslint/parser": "^8.39.0",
+        "eslint": "^9.32.0",
+        "husky": "^9.1.7",
+        "jest": "^30.0.5",
+        "nodemon": "^3.1.10",
+        "prettier": "3.6.2",
+        "rimraf": "^6.0.1",
+        "ts-jest": "^29.4.1",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.2"
+    },
+    "dependencies": {
+        "dotenv": "^17.2.1"
+    }
 }

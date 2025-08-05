@@ -1,8 +1,11 @@
-import dotenv from 'dotenv';
-dotenv.config();
+import dotenv from 'dotenv'
+
+dotenv.config()
+
 console.log(
-  '🏗️  👷👷 Your project starts from here welcome nodejs ts starter 👷👷 🏗️'
-);
+    '🏗️  👷👷 Your project starts from here welcome nodejs ts starter 👷👷 🏗️'
+)
+
 console.log(`
     ✅ husky
     ✅ eslint
@@ -12,10 +15,11 @@ console.log(`
     ✅ gitlab pipeline setup
     ✅ dotenv
     ✅ (dev,production,test,lint) scripts
-`);
+`)
 
 const ENV_VAR =
-  process.env.PROJECT_NAME ||
-  'create a .env file 🔨, create new variable TEST_VAR 🔨 inside it and assign any value to it 🤔🤔🤔🤔';
-console.log('Welcome to NodeJS typescript starter !!', ENV_VAR);
-console.log('\n🚀🚀🚀🚀🚀 happy coding 🚀🚀🚀🚀🚀');
+    process.env.PROJECT_NAME ||
+    'create a .env file 🔨, create new variable TEST_VAR 🔨 inside it and assign any value to it 🤔🤔🤔🤔'
+
+console.log('Welcome to NodeJS typescript starter !!', ENV_VAR)
+console.log('\n🚀🚀🚀🚀🚀 happy coding 🚀🚀🚀🚀🚀')
